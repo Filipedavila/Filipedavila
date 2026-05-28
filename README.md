@@ -23,7 +23,7 @@ I am a **Software Engineering Consultant** specializing in robust modular archit
 
 ### 🚀 Featured Open Source Work
 
-* [monitor-server (v2 architecture)](https://github.com/amagovpt/monitor-server/tree/v2)  
+* [monitor-server (v2 architecture)](https://github.com/Filipedavila/monitor-server/tree/monitor-server-v2)  
   The core auditing backend for **AccessMonitor** — the official national web accessibility evaluation platform maintained by **AMA** (Portugal's Agency for Administrative Modernization).  
   Currently re-engineering the legacy system into a high-performance **DDD modular monolith**. The V2 architecture implements event-driven parsing pipelines via **BullMQ**, optimized state storage, and fine-grained relationship access control (ReBAC).
 
