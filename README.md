@@ -34,5 +34,5 @@ I am a Software Engineering Consultant specializing in robust modular architectu
     The core auditing backend for AccessMonitor — the official national web accessibility evaluation platform maintained by AMA (Portugal's Agency for Administrative Modernization). Engineered the migration into a high-performance DDD modular monolith utilizing PostgreSQL (OLTP) / ClickHouse (OLAP), BullMQ event-driven parsing pipelines, and OpenFGA ReBAC authorization.
 *   **[accessmonitor-docker](https://github.com/amagovpt/accessmonitor-docker)**  
     A decoupled, lightweight orchestration service extracted directly from the core evaluation engine to run automated accessibility audits independently in containerized environments.
-*   **[observatory](https://github.com/Filipedavila/observatory)** (develop-v2)  
+*   **[observatory (develop-v2)](https://github.com/Filipedavila/observatory/tree/develop-v2)** (develop-v2)  
     The frontend dashboard for the Portuguese Web Accessibility Observatory. Led the complete codebase refactoring from legacy JavaScript to TypeScript, implementing a high-performance build pipeline with Vite, and efficient data-fetching hooks using TanStack Query.
