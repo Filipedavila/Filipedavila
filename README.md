@@ -33,6 +33,8 @@ I am a Software Engineering Consultant specializing in robust modular architectu
 
 *   **[monitor-server](https://github.com/Filipedavila/monitor-server/tree/monitor-server-v2)** (v2 architecture)  
     The core auditing backend for AccessMonitor — the official national web accessibility evaluation platform maintained by AMA (Portugal's Agency for Administrative Modernization). Engineered the migration into a high-performance DDD modular monolith utilizing PostgreSQL (OLTP) / ClickHouse (OLAP), BullMQ event-driven parsing pipelines, and OpenFGA ReBAC authorization.
+*    **[monitor-evaluations](https://github.com/amagovpt/monitor-evaluations)**
+A standalone, pure Node.js microservice engineered to isolate resource-intensive web accessibility evaluation workloads from the monolithic core. Built by decoupling the heavy evaluation engine into a lightweight runtime (dropping NestJS), it leverages optimized Alpine Chromium processes, strict V8 memory guards, and asynchronous BullMQ pipelines to eliminate resource contention and scale cleanly in containerized environments.
 *   **[accessmonitor-docker](https://github.com/amagovpt/accessmonitor-docker)**  
     A decoupled, lightweight orchestration service extracted directly from the core evaluation engine to run automated accessibility audits independently in containerized environments.
 *   **[observatory (develop-v2)](https://github.com/Filipedavila/observatory/tree/develop-v2)** (develop-v2)  
