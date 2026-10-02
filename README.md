@@ -7,10 +7,12 @@ I am a Software Engineering Consultant specializing in robust modular architectu
 *   **Modular Backend Architecture:** Designing highly cohesive, domain-driven application structures with **NestJS** and **Node.js**.
 *   **Data Architecture (OLTP & OLAP):** High-performance transactional modeling with **PostgreSQL** and real-time analytical workloads using **ClickHouse** (Certified Associate & Professional).
 *   **Cloud-Native & AWS Infrastructure:** Designing scalable, fault-tolerant cloud architectures on **AWS**, leveraging robust compute, serverless pipelines, and container orchestration for high-availability production workloads.
+*   **Observability & Telemetry:** Instrumenting production distributed systems and modular monoliths with OpenTelemetry (OTel), gathering time-series metrics via Prometheus, and visualizing operational telemetry through Grafana dashboards.
 *   **Asynchronous Processing:** Building fault-tolerant event-driven pipelines using **BullMQ** and **Redis Streams**.
 *   **Fine-Grained Authorization:** Implementing context-aware Relationship-Based Access Control (**ReBAC**) with **OpenFGA**.
 *   **Fullstack Capability:** Building performant, data-dense interfaces and dashboards in **React** (TypeScript, Zustand, TanStack Query).
 *   **Web Accessibility:** Orchestrating automated accessibility evaluation pipelines and auditing compliant with WCAG standards.
+
   
 📖 Tech Horizon
 *   **Agentic Workflows:** Exploring stateful, deterministic multi-agent orchestration patterns using **LangGraph**.
@@ -28,11 +30,14 @@ I am a Software Engineering Consultant specializing in robust modular architectu
 ![React](https://img.shields.io/badge/React-%2320232A.svg?style=flat&logo=react&logoColor=%2361DAFB)
 ![Docker](https://img.shields.io/badge/Docker-%232496ED.svg?style=flat&logo=docker&logoColor=white)
 ![LangGraph](https://img.shields.io/badge/LangGraph-%231C3C3C.svg?style=flat&logo=langgraph&logoColor=white)
+![OpenTelemetry](https://img.shields.io/badge/OpenTelemetry-%23000000.svg?style=flat&logo=opentelemetry&logoColor=white)
+![Prometheus](https://img.shields.io/badge/Prometheus-%23E6522C.svg?style=flat&logo=prometheus&logoColor=white)
+![Grafana](https://img.shields.io/badge/Grafana-%23F46800.svg?style=flat&logo=grafana&logoColor=white)
 
 🚀 Featured Open Source Work
 
 *   **[monitor-server](https://github.com/Filipedavila/monitor-server/tree/monitor-server-v2)** (v2 architecture)  
-    The core auditing backend for AccessMonitor — the official national web accessibility evaluation platform maintained by AMA (Portugal's Agency for Administrative Modernization). Engineered the migration into a high-performance DDD modular monolith utilizing PostgreSQL (OLTP) / ClickHouse (OLAP), BullMQ event-driven parsing pipelines, and OpenFGA ReBAC authorization.
+    The core auditing backend for AccessMonitor — the official national web accessibility evaluation platform maintained by AMA (Portugal's Agency for Administrative Modernization). Engineered the migration into a high-performance DDD modular monolith utilizing PostgreSQL (OLTP) / ClickHouse (OLAP), BullMQ event-driven parsing pipelines, and OpenFGA ReBAC authorization, and deep production observability powered by OpenTelemetry, Prometheus, and Grafana.
 *    **[monitor-evaluations](https://github.com/amagovpt/monitor-evaluations/tree/develop)**
 A standalone, pure Node.js microservice engineered to isolate resource-intensive web accessibility evaluation workloads from the monolithic core. Built by decoupling the heavy evaluation engine into a lightweight runtime (dropping NestJS), it leverages optimized Alpine Chromium processes, strict V8 memory guards, and asynchronous BullMQ pipelines to eliminate resource contention and scale cleanly in containerized environments.
 *   **[accessmonitor-docker](https://github.com/amagovpt/accessmonitor-docker)**  
