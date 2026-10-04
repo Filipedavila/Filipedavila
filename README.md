@@ -40,11 +40,11 @@ My work centers on strict domain invariants, end-to-end type safety, and observa
 
 🚀 Featured Open Source Work
 
-*   **[monitor-server](https://github.com/Filipedavila/monitor-server/tree/monitor-server-v2)** (v2 architecture)  
+*   **[monitor-server](https://github.com/amagovpt/monitor-server/tree/develop-v2)** (v2 architecture)  
     The core auditing backend for AccessMonitor — the official national web accessibility evaluation platform maintained by AMA (Portugal's Agency for Administrative Modernization). Engineered the migration into a high-performance DDD modular monolith utilizing PostgreSQL (OLTP) / ClickHouse (OLAP), BullMQ event-driven parsing pipelines, and OpenFGA ReBAC authorization, and deep production observability powered by OpenTelemetry, Prometheus, and Grafana.
 *    **[monitor-evaluations](https://github.com/amagovpt/monitor-evaluations/tree/develop)**
 A standalone, pure Node.js microservice engineered to isolate resource-intensive web accessibility evaluation workloads from the monolithic core. Built by decoupling the heavy evaluation engine into a lightweight runtime (dropping NestJS), it leverages optimized Alpine Chromium processes, strict V8 memory guards, and asynchronous BullMQ pipelines to eliminate resource contention and scale cleanly in containerized environments.
 *   **[accessmonitor-docker](https://github.com/amagovpt/accessmonitor-docker)**  
     A decoupled, lightweight orchestration service extracted directly from the core evaluation engine to run automated accessibility audits independently in containerized environments.
-*   **[observatory (develop-v2)](https://github.com/Filipedavila/observatory/tree/develop-v2)** (develop-v2)  
+*   **[observatory (develop-v2)](https://github.com/amagovpt/observatory/tree/develop-v2)** (develop-v2)  
     The frontend dashboard for the Portuguese Web Accessibility Observatory. Led the complete codebase refactoring from legacy JavaScript to TypeScript, implementing a high-performance build pipeline with Vite, and efficient data-fetching hooks using TanStack Query.
