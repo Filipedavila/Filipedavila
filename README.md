@@ -1,22 +1,26 @@
 Hi, I'm Filipe 👋
 
-I am a Software Engineering Consultant specializing in robust modular architectures, distributed systems, and high-scale backend infrastructure built with **Node.js** and TypeScript. My focus centers on strict domain invariants, end-to-end type safety, and observable, maintainable boundaries.
+I am a **Software Engineering Consultant focused on engineering resilient modular monoliths, high-throughput asynchronous pipelines, and low-latency OLAP data architectures for mission-critical platforms.**
 
-⚡ Core Production Stack
+My work centers on strict domain invariants, end-to-end type safety, and observable, maintainable boundaries in enterprise environments.
 
-*   **Modular Backend Architecture:** Designing highly cohesive, domain-driven application structures with **NestJS** and **Node.js**.
-*   **Data Architecture (OLTP & OLAP):** High-performance transactional modeling with **PostgreSQL** and real-time analytical workloads using **ClickHouse** (Certified Associate & Professional).
-*   **Cloud-Native & AWS Infrastructure:** Designing scalable, fault-tolerant cloud architectures on **AWS**, leveraging robust compute, serverless pipelines, and container orchestration for high-availability production workloads.
-*   **Observability & Telemetry:** Instrumenting production distributed systems and modular monoliths with OpenTelemetry (OTel), gathering time-series metrics via Prometheus, and visualizing operational telemetry through Grafana dashboards.
-*   **Asynchronous Processing:** Building fault-tolerant event-driven pipelines using **BullMQ** and **Redis Streams**.
-*   **Fine-Grained Authorization:** Implementing context-aware Relationship-Based Access Control (**ReBAC**) with **OpenFGA**.
-*   **Fullstack Capability:** Building performant, data-dense interfaces and dashboards in **React** (TypeScript, Zustand, TanStack Query).
-*   **Web Accessibility:** Orchestrating automated accessibility evaluation pipelines and auditing compliant with WCAG standards.
+---
 
-  
-📖 Tech Horizon
-*   **Agentic Workflows:** Exploring stateful, deterministic multi-agent orchestration patterns using **LangGraph**.
+### ⚡ Core Production Stack
+* **Modular Backend Architecture:** Designing highly cohesive, domain-driven application structures with NestJS and Node.js.
+* **Data Architecture (OLTP, OLAP & Relational Persistence):** High-performance transactional modeling and query optimization across PostgreSQL, MySQL, and real-time analytical workloads using ClickHouse.
+*  **Cloud-Native & AWS Infrastructure:** Designing scalable, fault-tolerant cloud architectures on AWS, leveraging robust compute, serverless pipelines, and container orchestration.
+* **Observability & Telemetry:** Instrumenting production distributed systems and modular monoliths with OpenTelemetry (OTel), Prometheus, and Grafana.
+* **Asynchronous Processing & Inter-Service Communication:** Building decoupled, fault-tolerant event-driven pipelines and cross-service communication layers using BullMQ and Redis Streams to orchestrate distributed workflows between monolithic cores and independent microservices.
+* **Fine-Grained Authorization:** Implementing context-aware Relationship-Based Access Control (ReBAC) with OpenFGA (Zanzibar model).
+* **Security & IAM:** OAuth2, OpenID Connect (OIDC), JWT, OpenFGA (ReBAC / Zanzibar), RBAC, Shift-Left Security (SAST/DAST).
+* **Fullstack Capability:** Building performant, data-dense interfaces and dashboards in React (TypeScript, Zustand, TanStack Query).
+* **Web Accessibility:** Orchestrating automated accessibility evaluation pipelines and auditing compliant with WCAG standards.
+* **Containerization & Infrastructure:** Architecting fully containerized, production-grade microservices and modular architectures using Docker and Docker Compose, ensuring absolute environment parity, isolated runtime sandboxes, and robust volume/network management.
 
+### 📖 Tech Horizon
+* **Agentic Workflows:** Exploring stateful, deterministic multi-agent orchestration patterns using LangGraph.
+* 
 🛠️ Tech Stack
 
 ![TypeScript](https://img.shields.io/badge/TypeScript-%23007ACC.svg?style=flat&logo=typescript&logoColor=white)
