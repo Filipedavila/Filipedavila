@@ -20,7 +20,7 @@ My work centers on strict domain invariants, end-to-end type safety, and observa
 
 ### 📖 Tech Horizon
 * **Agentic Workflows:** Exploring stateful, deterministic multi-agent orchestration patterns using LangGraph.
-* 
+  
 🛠️ Tech Stack
 
 ![TypeScript](https://img.shields.io/badge/TypeScript-%23007ACC.svg?style=flat&logo=typescript&logoColor=white)
