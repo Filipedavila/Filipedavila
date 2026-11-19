@@ -1,27 +1,25 @@
-Hi, I'm Filipe 👋
+### Hi, I'm Filipe 👋
 
-I am a **Software Engineering Consultant focused on engineering resilient modular monoliths, high-throughput asynchronous pipelines, and low-latency OLAP data architectures for mission-critical platforms.**
+Backend & Full-Stack Software Engineer, focused on **distributed event-driven systems, idempotent data pipelines, and applied AI workflows** in Node.js and TypeScript.
 
-My work centers on strict domain invariants, end-to-end type safety, and observable, maintainable boundaries in enterprise environments.
+My work centers on clean domain boundaries, end-to-end type safety, and observable production architectures. I specialize in decomposing legacy monoliths into modular systems, engineering OLTP/OLAP data pipelines, and building stateful, schema-validated LLM workflows.
 
 ---
-
 ### ⚡ Core Production Stack
-* **Modular Backend Architecture:** Designing highly cohesive, domain-driven application structures with NestJS and Node.js.
-* **Data Architecture (OLTP, OLAP & Relational Persistence):** High-performance transactional modeling and query optimization across PostgreSQL, MySQL, and real-time analytical workloads using ClickHouse.
-*  **Cloud-Native & AWS Infrastructure:** Designing scalable, fault-tolerant cloud architectures on AWS, leveraging robust compute, serverless pipelines, and container orchestration.
-* **Observability & Telemetry:** Instrumenting production distributed systems and modular monoliths with OpenTelemetry (OTel), Prometheus, and Grafana.
-* **Asynchronous Processing & Inter-Service Communication:** Building decoupled, fault-tolerant event-driven pipelines and cross-service communication layers using BullMQ and Redis Streams to orchestrate distributed workflows between monolithic cores and independent microservices.
-* **Fine-Grained Authorization:** Implementing context-aware Relationship-Based Access Control (ReBAC) with OpenFGA (Zanzibar model).
-* **Security & IAM:** OAuth2, OpenID Connect (OIDC), JWT, OpenFGA (ReBAC / Zanzibar), RBAC, Shift-Left Security (SAST/DAST).
-* **Fullstack Capability:** Building performant, data-dense interfaces and dashboards in React (TypeScript, Zustand, TanStack Query).
-* **Web Accessibility:** Orchestrating automated accessibility evaluation pipelines and auditing compliant with WCAG standards.
-* **Containerization & Infrastructure:** Architecting fully containerized, production-grade microservices and modular architectures using Docker and Docker Compose, ensuring absolute environment parity, isolated runtime sandboxes, and robust volume/network management.
+
+- **Backend & Architecture:** Node.js, TypeScript, NestJS, PHP (Laravel), Modular Monoliths, Domain-Driven Design (DDD).
+- **Data & Storage (OLTP / OLAP):** PostgreSQL, ClickHouse (Materialized Views, `MergeTree`), MySQL, AWS S3 (cold-storage payload offloading).
+- **Async & Event-Driven Pipelines:** Redis Streams (`XACK` batch consumers), BullMQ, Transactional Outbox pattern, idempotent workers.
+- **Applied AI & Agentic Workflows:** LangGraph (TypeScript), backpressure-aware LLM streaming (`ReadableStream`, `AbortController`), deterministic Zod schema validation.
+- **AuthZ & Security:** OpenFGA (ReBAC / Zanzibar model), OAuth2 / OIDC, JWT, Shift-Left SAST (Semgrep).
+- **Observability & Ops:** OpenTelemetry (OTel), Grafana, Docker, Docker Compose, Linux, AWS (EC2, S3), GitHub Actions CI/CD.
+- **Frontend & Browser Runtime:** React, TypeScript, Vite, TanStack Query, Zustand, Chrome Extensions (Manifest V3), automated WCAG accessibility pipelines.
 
 ### 📖 Tech Horizon
-* **Agentic Workflows:** Exploring stateful, deterministic multi-agent orchestration patterns using LangGraph.
+
+- **GraphRAG & Context Retrieval:** Combining Neo4j knowledge graphs with document embeddings to improve retrieval accuracy.
   
-🛠️ Tech Stack
+### 🛠️ Tech Stack
 
 ![TypeScript](https://img.shields.io/badge/TypeScript-%23007ACC.svg?style=flat&logo=typescript&logoColor=white)
 ![NodeJS](https://img.shields.io/badge/node.js-%2343853D.svg?style=flat&logo=node.js&logoColor=white)
@@ -35,16 +33,21 @@ My work centers on strict domain invariants, end-to-end type safety, and observa
 ![Docker](https://img.shields.io/badge/Docker-%232496ED.svg?style=flat&logo=docker&logoColor=white)
 ![LangGraph](https://img.shields.io/badge/LangGraph-%231C3C3C.svg?style=flat&logo=langgraph&logoColor=white)
 ![OpenTelemetry](https://img.shields.io/badge/OpenTelemetry-%23000000.svg?style=flat&logo=opentelemetry&logoColor=white)
-![Prometheus](https://img.shields.io/badge/Prometheus-%23E6522C.svg?style=flat&logo=prometheus&logoColor=white)
 ![Grafana](https://img.shields.io/badge/Grafana-%23F46800.svg?style=flat&logo=grafana&logoColor=white)
 
-🚀 Featured Open Source Work
+### 🚀 Featured Open Source Work
 
 *   **[monitor-server](https://github.com/amagovpt/monitor-server/tree/develop-v2)** (v2 architecture)  
-    The core auditing backend for AccessMonitor — the official national web accessibility evaluation platform maintained by AMA (Portugal's Agency for Administrative Modernization). Engineered the migration into a high-performance DDD modular monolith utilizing PostgreSQL (OLTP) / ClickHouse (OLAP), BullMQ event-driven parsing pipelines, and OpenFGA ReBAC authorization, and deep production observability powered by OpenTelemetry, Prometheus, and Grafana.
-*    **[monitor-evaluations](https://github.com/amagovpt/monitor-evaluations/tree/develop)**
-A standalone, pure Node.js microservice engineered to isolate resource-intensive web accessibility evaluation workloads from the monolithic core. Built by decoupling the heavy evaluation engine into a lightweight runtime (dropping NestJS), it leverages optimized Alpine Chromium processes, strict V8 memory guards, and asynchronous BullMQ pipelines to eliminate resource contention and scale cleanly in containerized environments.
+    The core auditing backend for AccessMonitor — the official national web accessibility evaluation platform maintained by AMA (Portugal's Agency for Administrative Modernization). Engineered the migration into a high-performance DDD modular monolith utilizing PostgreSQL (OLTP) / ClickHouse (OLAP), BullMQ event-driven parsing pipelines, and OpenFGA ReBAC authorization, and deep production observability powered by OpenTelemetry, ClickHouse Clickstack, and Grafana.
+
+*   **[monitor-evaluations](https://github.com/amagovpt/monitor-evaluations/tree/develop)**
+  Standalone pure Node.js worker runtime and containerized orchestration layer decoupled from the NestJS core. Consumes idempotent BullMQ jobs and delegates CPU- and memory-intensive page audits to isolated **Browserless Chromium** containers over **CDP / WebSockets**, eliminating API Event Loop blocking and OOM crashes under concurrent load.
+  
 *   **[accessmonitor-docker](https://github.com/amagovpt/accessmonitor-docker)**  
     A decoupled, lightweight orchestration service extracted directly from the core evaluation engine to run automated accessibility audits independently in containerized environments.
-*   **[observatory (develop-v2)](https://github.com/amagovpt/observatory/tree/develop-v2)** (develop-v2)  
+    
+*   **[observatory](https://github.com/amagovpt/observatory/tree/develop-v2)** (develop-v2)  
     The frontend dashboard for the Portuguese Web Accessibility Observatory. Led the complete codebase refactoring from legacy JavaScript to TypeScript, implementing a high-performance build pipeline with Vite, and efficient data-fetching hooks using TanStack Query.
+
+*  **[accessmonitor-ce](https://github.com/amagovpt/accessmonitor-ce)**  
+  Official Chrome and Edge extension (Manifest V3, published on the Chrome Web Store) for auditing authenticated web pages and dynamic UI states against WCAG standards. Led the codebase migration from legacy JavaScript to strict TypeScript and React, centralizing scoring logic in `@a12e/accessmonitor-rulesets` and setting up automated release pipelines (Changesets, Webpack, Husky, commitlint, GitHub Actions).
